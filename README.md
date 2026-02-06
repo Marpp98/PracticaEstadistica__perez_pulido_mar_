@@ -4,6 +4,33 @@
 Este proyecto se centra en el análisis estadístico de las variables recogidas en diferentes datsets de Nhanes desde 2007 hasta 2023 para poder determinar el grado de depresión de una persona estadounidense.
 
 ### 📂 Estructura del Repositorio
+```
+/
+├── data/                       # Datos originales y transformados
+│   ├── 2007 - 2008             # Cada año contiene los archivos correspondientes a los siguientes
+│   ├── 2009 - 2010             datasets: 
+│   ├── 2011 - 2012             - Demográficos
+│   ├── 2013 - 2014             - Salud Menal - depresión
+│   ├── 2015 - 2016             - Activiad física
+│   ├── 2017 - 2020             - Problemas de sueño
+│   ├── 2021 - 2023
+│   └── PracticaEstadistica_perez_pulido_mar_.ipynb
+│
+│
+├── notebooks/                  # Notebooks de trabajo
+│   ├── limpieza_datos.ipynb
+│   └── PracticaEstadistica_perez_pulido_mar_.ipynb
+│
+├── src/                        # Funciones aplicadas en el proyecto
+│   ├── __init__.py
+│   ├── visualizaciones.py      # Funciones para análisis y gráficos
+│   └── transformaciones.py     # Funciones de limpieza y transformación de datos
+|
+├── .gitignore                  # Archivo que indica que elementos debe ignorar Git
+│
+└── README.md                   # Documentación principal del repositorio      
+
+```
 
 ### 🧩 Metodología
 El proyecto ha seguido los siguientes pasos para su desarrollo:
@@ -21,7 +48,10 @@ El proyecto ha seguido los siguientes pasos para su desarrollo:
 ### 📊 Conclusiones
 
 ### 🛠️ Tecnologías Utilizadas
-- Python (Jupyter Notebooks): para la limpieza y comprobación inicial de los datos de entrada. 
-- Matplotlib: para la visualización de gráficos.
-- Seaborn: para la visualización de gráficos.
-- Scikit-learn: para el desarrollo de modelos.
+- Python
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
+- Scikit - learn
+- Jupyter Notebook
