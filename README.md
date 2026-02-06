@@ -33,17 +33,19 @@ Este proyecto se centra en el análisis estadístico de las variables recogidas 
 ```
 
 ### 🧩 Metodología
-El proyecto ha seguido los siguientes pasos para su desarrollo:
-1. Recopilación, limpieza y normalización de los datasets correspondiendes a encuestas sobre:
+Se ha trabajado sobre los datos obtenidos de la web de [NHANES](https://wwwn.cdc.gov/nchs/nhanes/), en la cual se han seleccionado los periodos desde 2007 hasta 2023.
+Para ello se han seleccionado los datasets correspondiendes a encuestas sobre:
 - Demografía
 - Actividad física
 - Problemas de sueño
 - Salud mental - depresión
 
-2. Análisis descriptivo
-3. Inferencia y modelado(regresión lineal y logística)
-4. Regresión Lineal "From Scratch" con datos simulados
-5. Series temporales con datos simulados 
+El proyecto ha seguido los siguientes pasos para su desarrollo:
+1. **Recopilación, limpieza y normalización**
+2. **Análisis descriptivo**
+3. **Inferencia y modelado(regresión lineal y logística)**
+4. **Regresión Lineal "From Scratch" con datos simulados**
+5. **Series temporales con datos simulados** 
 
 ### 📊 Conclusiones
 
