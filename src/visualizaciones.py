@@ -150,7 +150,7 @@ def boxplot_bivariante(df,target,columnas, cols = 3):
         axes = axes.flatten()
 
     for i,col in enumerate(columnas):
-        sns.boxplot(data=df, x=target, y=col, hue= target, ax = axes[i])
+        sns.boxplot(data=df, x=target, y=col, hue= target, palette='tab10', ax = axes[i])
         axes[i].set_title(f'{col} según {target}', fontsize = 16)
         axes[i].set_xlabel(target)
         axes[i].set_ylabel(f'{col}')
@@ -254,7 +254,7 @@ def dibujar_pairplot(df,target,columnas):
         target: variable discriminatoria
         columnas: lista de columnas a dibujar
         '''
-        grafico = sns.pairplot(df, hue=target, vars=columnas)
+        grafico = sns.pairplot(df, hue=target, vars=columnas, palette="tab10")
 
         for ax in grafico.axes.flatten():
             if ax is not None:

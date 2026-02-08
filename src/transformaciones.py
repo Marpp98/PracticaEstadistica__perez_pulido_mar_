@@ -68,7 +68,7 @@ def cambiar_tipos(df,categoricas,numericas):
     for i in numericas:
         df[i] = pd.to_numeric(df[i], errors = 'coerce').astype('Int64')
 
-    return df.info()
+    return df
 
 
 def contar_nulos(df,columnas):
@@ -123,7 +123,7 @@ def categorizar_estudios(titulo, masters,grados):
 
 def deteccion_outliers(df,columnas):
     ''' Función que calcula max., mín., Q1, Q3, IQR y los límites superiores e inferiores para detectar la existencia de outliers.
-    df = dataframe sobre el que se va obtener los datos 
+    df = dataframe sobre el que se va a obtener los datos. 
     columnas = listado de columnas sobre el cual se itera para detectar valores atípicos
     '''
 
@@ -150,6 +150,17 @@ def deteccion_outliers(df,columnas):
             print(f'Outlier superior de {i} por encima de {high_outlier}')
         
         print('-------------------------------------------')
+
+
+
+def calculo_nulos(df, columnas):
+    ''' Función que calcula el porcentaje de nulos en las columnas seleccionadas.
+    df = dataframe sobre el que se va a obtener los datos. 
+    columnas = listado de columnas sobre el cual se itera para detectar valores nulos.
+    '''
+    for col in columnas:
+        nulos = round((df[col].isnull().sum()/len(df[col]) * 100),2)
+        print(f'Porcentaje de nulos de {col} = {nulos}')
 
 
 print('Funciones ejecutadas correctamente')
